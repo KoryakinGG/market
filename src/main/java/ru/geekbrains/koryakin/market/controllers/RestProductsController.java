@@ -21,7 +21,6 @@ import java.util.List;
 public class RestProductsController {
     private ProductsService productsService;
 
-
     @Autowired
     public RestProductsController(ProductsService productsService) {
         this.productsService = productsService;

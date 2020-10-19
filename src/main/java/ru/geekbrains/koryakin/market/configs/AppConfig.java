@@ -2,6 +2,7 @@ package ru.geekbrains.koryakin.market.configs;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.Profile;
 import org.springframework.util.StringUtils;
 import org.springframework.web.servlet.LocaleResolver;
@@ -15,6 +16,7 @@ import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 import java.util.Locale;
 
 @Configuration
+@EnableAspectJAutoProxy
 public class AppConfig implements WebMvcConfigurer {
     @Bean
     public LocaleResolver localeResolver() {
